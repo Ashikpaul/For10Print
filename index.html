@@ -1,26 +1,14 @@
 <!DOCTYPE html>
-<html>
-<body style="margin: 5%;">
-    <div style="word-wrap: break-word; line-height: 1em;" id="content">
-        
-    </div>
-    
-    <script type="text/javascript" >	
-		    var boxes = ["\u2571", "\u2572"];
-        var max = 4000;
-        function writeNext()
-        {
-            document.getElementById('content').innerHTML +=
-            boxes[Math.round(Math.random())];
-        }
-        var count = 0;
-        function run() {
-            writeNext();
-            if(count++ < max) {
-                setTimeout(run,9);
-            }
-        }
-        run();        
-    </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>10 Print!</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+  </head>  
+  <body style="margin: 2%;">
+    <div id="ten"></div>
+  </body>
 </html>
